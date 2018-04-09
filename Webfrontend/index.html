@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controller</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-switch.css" rel="stylesheet">
+  </head>
+  <body>
+	<!--status-->
+		<div class="alert alert-danger" style="display: none;" id="error">
+			<strong name="msg"></strong>
+		</div>
+    <div class="container well">
+	<div id="content">
+		<div class="row">
+			<div class="col-xs-2 col-md-4">
+				<span name="label1" class="label label-default"><span class="glyphicon glyphicon glyphicon-off" aria-hidden="true"></span></span>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<label>#1</label>
+			</div>
+			<div class="col-xs-6 col-md-4 text-right">
+				<button type="button" class="btn btn-success" onclick="on(1)">On</button>
+				<button type="button" class="btn btn-danger" onclick="off(1)">Off</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 col-md-4">
+				<span name="label2" class="label label-default"><span class="glyphicon glyphicon glyphicon-off" aria-hidden="true"></span></span>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<label>#2</label>
+			</div>
+			<div class="col-xs-6 col-md-4 text-right">
+				<button type="button" class="btn btn-success" onclick="on(2)">On</button>
+				<button type="button" class="btn btn-danger" onclick="off(2)">Off</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 col-md-4">
+				<span name="label3" class="label label-default"><span class="glyphicon glyphicon glyphicon-off" aria-hidden="true"></span></span>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<label>#3</label>
+			</div>
+			<div class="col-xs-6 col-md-4 text-right">
+				<button type="button" class="btn btn-success" onclick="on(3)">On</button>
+				<button type="button" class="btn btn-danger" onclick="off(3)">Off</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 col-md-4">
+				<span name="label4" class="label label-default"><span class="glyphicon glyphicon glyphicon-off" aria-hidden="true"></span></span>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<label>#4</label>
+			</div>
+			<div class="col-xs-6 col-md-4 text-right">
+				<button type="button" class="btn btn-success" onclick="on(4)">On</button>
+				<button type="button" class="btn btn-danger" onclick="off(4)">Off</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 col-md-4">
+				<span name="label5" class="label label-default"><span class="glyphicon glyphicon glyphicon-off" aria-hidden="true"></span></span>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<label>#5</label>
+			</div>
+			<div class="col-xs-6 col-md-4 text-right">
+				<button type="button" class="btn btn-success" onclick="on(5)">On</button>
+				<button type="button" class="btn btn-danger" onclick="off(5)">Off</button>
+			</div>
+		</div>
+	</div>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+  </body>
+</html>
