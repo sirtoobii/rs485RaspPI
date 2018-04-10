@@ -35,7 +35,7 @@ For specific the configurations please refer the comments in the scripts
 - USB - RS485 Konverter ([ebay-Link](https://www.ebay.de/itm/USB-RS485-Konverter-/111326580742))
 
 ### Warning
-This scripts are **not** secure! I highly recommend to use them only controlled environments. This is especially true for the web-interface.
+These scripts are **not** secure! I highly recommend to use them only controlled environments. This is especially true for the web-interface.
 
 ### License
 MIT
