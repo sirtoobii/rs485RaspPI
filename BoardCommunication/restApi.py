@@ -60,9 +60,9 @@ class shutdown:
 			
 #Delayed open
 class timed:
-	def GET(self,id,timeout,pw):
+    def GET(self,id,timeout,pw):
 	web.header('Access-Control-Allow-Origin', '*')
-	web.header('Content-Type','application/json; charset=utf-8', unique=True) 
+	web.header('Content-Type','application/json; charset=utf-8', unique=True)
 	#AUTH
 	if pw == authstring:
 		id = int(id)
