@@ -10,14 +10,35 @@ I just wanted to share my simple RS485 controller. This repo contains the follow
 | Webfrontend | A very simple webfrontend (relays on BoardCommunication script) |
 
 ## usage
+**Prerequisite: Python3.x installed**
 ```sh
-$ cd BoardCommunication
-$ python restApi.py
+# create virtual env
+python3 -m venv venv
+
+# activate
+source venv/bin/activate
+
+# run server
+cd BoardCommunication
+python restApi.py
 ```
 Server listens now on
 ```sh
-127.0.0.1:8080
+0.0.0.0:8080
 ```
+## Installation as a service
+**Prerequisite: Python3.x installed**
+
+On systems with systemd installed the `instal.sh`script can be used to install the communication server as a service.
+```sh
+chmod +x install.sh
+./install.sh
+# start on boot
+sudo systemctl enable rs485
+# control
+service rs485 start|stop|status
+```
+
 Example request to switch on channel 2
 ```sh
 127.0.0.1:8080/on/2/{password}

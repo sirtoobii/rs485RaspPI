@@ -1,2 +1,2 @@
-web.py==0.39
-minimalmodbus==0.7 
+web.py
+minimalmodbus==0.7

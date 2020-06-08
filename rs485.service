@@ -1,0 +1,15 @@
+[Unit]
+Description=RS485 Communicator Server
+After=network.target
+StartLimitBurst=5
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+User=%USER%
+ExecStart=%EXECPATH% %COMMAND%
+
+[Install]
+WantedBy=multi-user.target
